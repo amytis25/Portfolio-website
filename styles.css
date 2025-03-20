@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #f4badb;
+    color: #f4badb;
+}
+#header{
+    background-color: #f4badb;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#name{
+    			/* font settings*/
+                font-size: 40px;
+                font-family: monospace;
+                font-stretch: 20px;
+                
+                /* color settings*/
+                color: white;
+                background-color: #CF7795;
+      
+              /* margin settings*/
+                margin-bottom: 0px;	 
+                
+              /* align settings*/
+      
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                   
+                
+               /*dimensions*/
+               height: 90px;
+
+               border-width: 0px;
+}
+#info{
+    		/* font settings*/
+            font-size: 15px;
+            font-family: monospace;
+            
+            /* color settings*/
+            color: white;
+            background-color: #E5B7D0;
+  
+          /* margin settings*/
+            margin-top: 0px;
+            margin-bottom: 0px;	 
+            
+          /* align settings*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+  
+            
+           /*dimensions*/
+           height: 60px;		
+}
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contentBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4badb;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 25vb;
+}
