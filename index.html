@@ -6,111 +6,302 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Amytis' Page </title>
-    <link rel="stylesheet" href=".\styles.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body onload="goToHome()">
     <div id="header">
-        <div id="name">
-            <button id="name" type="button" onclick="goToHome()">AMYTIS SAGHAFI</button>
+        <div id="myname">
+            <button id="myname" type="button" onclick="goToHome()">AMYTIS SAGHAFI</button>
         </div>
         <div id="info">
             North Vancouver, British Columbia, V7N2K2 <br> (778) 322-3928
         </div>
-        <div id="nav">
-            <button type="button" onclick="goToHome()">HOME</button>
-            <button type="button" onclick="goToAbout()">ABOUT</button>
-            <button type="button" onclick="goToContact()">CONTACT</button>
-            <button type="button" onclick="goToPortfolio()">PORTFOLIO</button>
-
+        <div id="navbar">
+            <button id="nav" type="button" onclick="goToHome()">HOME</button>
+            <button id="nav" type="button" onclick="goToAbout()">ABOUT</button>
+            <button id="nav" type="button" onclick="goToPortfolio()">PORTFOLIO</button>
+            <button id="nav" type="button" onclick="goToContact()">CONTACT</button>
         </div>
-        <div id="HomePage">
+    </div>
+    <div id="HomePage">
+        <table>
+            <tr>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToProjects()">
+                                        Technical Projects
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentPic" type="button" onclick="goToProjects()">
+                                        <img style="width: 95%" src="images/code.png" alt="code">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToArt()">
+                                        Art
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentTitle" type="button" onclick="goToArt()">
+                                        <img style="width: 95%" src="images/physical_art.jpg" alt="physical portrait">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToPhotography()">
+                                        Photography
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentTitle" type="button" onclick="goToPhotography()">
+                                        <img style="width: 95%" src="images/travel_cover.jpg" alt="Venice Beach">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="resumeBox">
+            <div id="contentTitle">
+                <button id="contentTitle" type="button" onclick="goToResume()">Resume</button>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <table>
+            <td id="me">
+                <img id="me" class="circle_crop" style="width:75%" src="images/me.jpg" alt="Picture of amytis">
+            </td>
+            <td>
+                <div id="blurb">
+                    <p>
+                        Welcome to my page! I'm Amytis Saghafi and I'm a third year engineering science student at Simon
+                        Fraser University with a concentration in systems engineering. I created this website not only
+                        to
+                        showcase my work, like a portfolio, but my hobbies as well. I hope this website helps you get to
+                        know me better!
+                    </p>
+                    <div id="resumeBox">
+                        <div id="contentTitle">
+                            <button id="contentTitle" type="button" onclick="goToResume()">View my Resume</button>
+                        </div>
+                    </div>
+
+                </div>
+            </td>
+        </table>
+    </div>
+    <div id="resume"></div>
+    <div id="Portfolio">
+        <div id="Title">Portfolio</div>
+        <table>
+            <tr>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToSoftwareProjects()">
+                                        Software Projects
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentTitle" type="button" onclick="goToSoftwareProjects()">
+                                        <img style="width: 95%" src="images/code.png" alt="code">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToHardwareProjects()">
+                                        Physical Projects
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentTitle" type="button" onclick="goToHardwareProjects()">
+                                        <img style="width: 95%" src="images/wires.jpg" alt="wires">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToArt()">
+                                        Art
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentTitle" type="button" onclick="goToArt()">
+                                        <img style="width: 95%" src="images/physical_art.jpg" alt="physical portrait">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToPhotography()">
+                                        Photography
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentTitle" type="button" onclick="goToPhotography()">
+                                        <img style="width: 95%" src="images/travel_cover.jpg" alt="Venice Beach">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="Contact">
+        <table>
+            <tr>
+                <p>
+                    You can reach me by leaving a message or emailing me at
+                    <a href="mailto: amytis_saghafi@sfu.ca">amytis_saghafi@sfu.ca</a>
+                </p>
+            </tr>
             <table>
                 <tr>
                     <td>
-                        <div id="contentBox">
-                            <table>
-                                <tr>
-                                    <td id="contentTitle">
-                                        Projects
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="contentPic">
-                                        <img style="width: 95%" src=".\images\code.png" alt="code">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                        <label for="name">Name:</label>
                     </td>
                     <td>
-                        <div id="contentBox">
-                            <table>
-                                <tr>
-                                    <td id="contentTitle">
-                                        Art
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="contentPic">
-                                        <img style="width: 95%" src=".\images\physical_art.jpg" alt="physical portrait">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                        <input type="text" id="name" name="name" required>
                     </td>
-                    <td>
-                        <div id="contentBox">
-                            <table>
-                                <tr>
-                                    <td id="contentTitle">
-                                        Photography
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="contentPic">
-                                        <img style="width: 95%" src=".\images\travel_cover.jpg" alt="Venice Beach">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-
                 </tr>
                 <tr>
-                    <td id="resumeBox">
-                        <div id="contentBox">
-                            <div id="contentTitle">
-                                Resume
-                            </div>
-                        </div>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="message">Message:</label>
+                    </td>
+                    <td>
+                        <textarea id="message" name="message" required></textarea>
                     </td>
                 </tr>
             </table>
+            <td>
+                <button id="submit" type="button" onclick="submitMessage()">Submit</button>
+            </td>
+        </table>
 
-        </div>
-        <div id="About">
 
-        </div>
-        <div id="resume">
-
-        </div>
-        <div id="Portfolio">
-
-        </div>
-        <div id="Contact">
-
-        </div>
-        <div id="Projects">
-
-        </div>
-        <div id="Art">
-
-        </div>
-        <div id="Photography">
-
-        </div>
+    </div>
+    <div id="Projects">
+        <div id="Title">Technical Projects</div>
+        <table>
+            <tr>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToSoftwareProjects()">
+                                        Software Projects
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentTitle" type="button" onclick="goToSoftwareProjects()">
+                                        <img style="width: 95%" src="images/code.png" alt="code">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div id="contentBox">
+                        <table>
+                            <tr>
+                                <td id="contentTitle">
+                                    <button id="contentTitle" type="button" onclick="goToHardwareProjects()">
+                                        Physical Projects
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="contentPic">
+                                    <button id="contentTitle" type="button" onclick="goToHardwareProjects()">
+                                        <img style="width: 95%" src="images/wires.jpg" alt="wires">
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="softwareProjects"></div>
+    <div id="hardwareProjects"></div>
+    <div id="Art"></div>
+    <div id="Photography"></div>
 </body>
 
 </html>
